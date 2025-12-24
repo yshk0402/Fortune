@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Script from "next/script";
 import "./globals.css";
+import LegalFooter from "../components/legal-footer";
 
 export const metadata = {
   title: "六命占術×MBTI診断",
@@ -26,7 +27,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </>
         )}
       </head>
-      <body>{children}</body>
+      <body className="flex min-h-screen flex-col">
+        <main className="flex-1">{children}</main>
+        <LegalFooter />
+      </body>
     </html>
   );
 }
