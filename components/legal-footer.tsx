@@ -4,6 +4,7 @@ const LEGAL_LINKS = [
   { label: "利用規約", href: "/legal/terms.html" },
   { label: "プライバシーポリシー", href: "/legal/privacy.html" },
   { label: "決済・返金ポリシー", href: "/legal/refund.html" },
+  { label: "特定商取引法", href: "/legal/commercial.html" },
 ];
 
 export default function LegalFooter() {
